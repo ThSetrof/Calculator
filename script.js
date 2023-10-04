@@ -19,3 +19,22 @@ function operate(operator, a, b){
 
 let leftOperand, rightOperand, operator;
 
+const clearBtn = document.getElementById('clear-btn');
+const deleteBtn = document.getElementById('delete-btn');
+
+const upperDisplay = document.querySelector('.upper');
+const lowerDisplay = document.querySelector('.lower');
+
+function clear(){
+    leftOperand = 0;
+    rightOperand = 0;
+    operator = '';
+
+    upperDisplay.textContent = '';
+    lowerDisplay.textContent = '';
+
+    console.log('screen cleared');
+}
+
+
+clearBtn.addEventListener('click', clear);
