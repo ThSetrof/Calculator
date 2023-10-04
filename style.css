@@ -1,7 +1,138 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 :root{
-   --text: #080609;
+   --text: darkslategray;
    --background: #ffffff;
    --primary: #cfbdb9;
    --secondary: #e4eae1;
    --accent: #678f98;
+}
+
+body{
+	background-color: var(--background);
+}
+
+h1{
+	padding-bottom: 150px;
+}
+
+.round{
+	border-radius: 4px;
+}
+
+
+
+.main{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+
+.buttons-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr) ;
+	grid-gap: 8px;
+	padding: 4px;
+
+}
+
+
+.btn{
+	width: 80px;
+	height: 80px;
+	font-size: 20px;
+	color: var(--text);
+	border: 2px solid var(--text);
+
+	border-radius: 12px;
+	font-weight: 500;
+	transition: all .15s ease-in-out;
+}
+
+.btn:hover{
+	transform: scale(1.1, 1.1);
+}
+
+
+
+.digit{
+	background-color: var(--primary);
+	border: 2px solid var(--text);
+	color: darkslategray
+
+}
+
+.digit:active{
+	background-color: var(--accent);
+	color: var(--primary);
+}
+
+
+
+
+
+.clear-btn,
+.delete-btn{
+	grid-column: span 2;
+	width: 100%;
+
+}
+
+
+
+.delete-btn{
+	background-color: var(--secondary);
+}
+
+.delete-btn:active{
+	background-color: var(--accent);
+}
+
+.clear-btn{
+	background-color: var(--accent);
+	color: var(--text);
+	
+}
+
+.clear-btn:active{
+	background-color: var(--secondary);
+}
+
+
+
+.clear-btn:hover,
+.delete-btn:hover{
+	transform: scale(1.05, 1.05); 
+}
+
+.calculator{
+	border: 2px solid var(--accent);
+	padding: 24px 12px;
+	border-radius: 8px;
+	background-color: var(--background);
+}
+
+.display-container{
+	height: 100px;
+	width: 100%;
+
+	padding: 4px;
+
+}
+
+.display{
+	border: 2px solid var(--accent);
+	height: 100%;
+	width: 100%;
+	border-radius: 12px;
 }
