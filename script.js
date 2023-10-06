@@ -24,6 +24,11 @@ const deleteBtn = document.getElementById('delete-btn');
 
 const upperDisplay = document.querySelector('.upper');
 const lowerDisplay = document.querySelector('.lower');
+const digits = document.querySelectorAll('.digit');
+const operators = document.querySelectorAll('.operator');
+
+
+
 
 function clear(){
     leftOperand = 0;
@@ -32,9 +37,31 @@ function clear(){
 
     upperDisplay.textContent = '';
     lowerDisplay.textContent = '';
+}
 
-    console.log('screen cleared');
+clearBtn.addEventListener('click', clear);
+
+function updateUpperDisplay(string){
+
+}
+
+function updateLowerDisplay(string){
+    lowerDisplay.textContent += string + '';
 }
 
 
-clearBtn.addEventListener('click', clear);
+console.log(digits.length);
+
+digits.forEach(digit => {
+    digit.addEventListener('click', ev => {
+        updateLowerDisplay(ev.target.value);
+    })
+})
+
+
+operators.forEach(operator =>{
+    operator.addEventListener('click', ev =>{
+        updateLowerDisplay(' ' + ev.target.value + ' ');
+    })
+})
+
