@@ -19,7 +19,7 @@ body{
 }
 
 h1{
-	padding-bottom: 150px;
+	padding-bottom: 50px;
 }
 
 .round{
@@ -58,7 +58,7 @@ h1{
 
 	border-radius: 12px;
 	font-weight: 500;
-	transition: all .15s ease-in-out;
+	transition: all 0.08s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .btn:hover{
