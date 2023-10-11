@@ -12,3 +12,6 @@ This project is part of the Odin Project Course for Web development. For more in
 
 [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator)
 
+
+## Interaction 
+To check a live preview of the calculator, check out this link: [](https://thsetrof.github.io/Calculator/)
