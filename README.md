@@ -14,4 +14,4 @@ This project is part of the Odin Project Course for Web development. For more in
 
 
 ## Interaction 
-To check a live preview of the calculator, check out this link: [](https://thsetrof.github.io/Calculator/)
+To check a live preview of the calculator, check out this link: [Calculator](https://thsetrof.github.io/Calculator/)
