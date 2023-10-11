@@ -11,5 +11,3 @@ This project is part of the Odin Project Course for Web development. For more in
 
 [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator)
 
-
-
