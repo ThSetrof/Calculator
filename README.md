@@ -9,9 +9,9 @@
 In this project the goal was to build a simple calculator using basic html, css and javascript.
 
 This project is part of the Odin Project Course for Web development. For more info about the Odin Project check link below: 
-<p align:'center'>
+
   [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator)
-</p>
+
 
 
 ## Interaction 
