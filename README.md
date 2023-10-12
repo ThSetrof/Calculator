@@ -1,7 +1,7 @@
 # Calculator
 
-<p align = 'center>
-![Screenshot 2023-10-11 at 09-53-15 Calculator](https://github.com/ThSetrof/Calculator/assets/75889955/9c1b4116-4a2d-40b3-b9b6-9796a66ce786)
+<p align = 'center'>
+  ![Screenshot 2023-10-11 at 09-53-15 Calculator](https://github.com/ThSetrof/Calculator/assets/75889955/9c1b4116-4a2d-40b3-b9b6-9796a66ce786)
 </p>
 
 ## Basic Overview
