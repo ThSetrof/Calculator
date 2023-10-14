@@ -106,18 +106,28 @@ function getKeyWithValue(value){
 addEventListener('keydown', ev => {
     let key = ev.key;
 
+    key = (key == '/') ? '÷' : key;
+
+    
+    console.log(key);
+
     if(isDigit(key)){
         evaluateDigits(key);
         let dig = getKeyWithValue(key);
         console.log(dig);
     }
 
-    if(isOperator(key)){
+
+    if(isOperator(key) ){
         evaluateOperator(key);
     }
 
     if(key == 'Backspace'){
         deleteInput();
+    }
+
+    if(key == 'Enter'){
+        evaluateOperator('=');
     }
 
 });
@@ -139,6 +149,10 @@ operators.forEach(operator =>{
 
 function evaluateOperator(newInput){
     let current_input = newInput;
+
+    if(input == ''){
+        return;
+    }
 
         if(input.endsWith(' ')){
             input = input.slice(0, -3);
